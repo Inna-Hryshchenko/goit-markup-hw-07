@@ -132,27 +132,12 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav__item {
+.snitem {
   position: relative;
 }
 
-.site-nav__item:not(:last-child) {
+.snitem:not(:last-child) {
   margin-right: 50px;
-}
-
-.site-nav__link {
-  text-decoration: none;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  transition: color 250ms var(--timing-function);
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
 }
 
 .auth-nav .mail {
@@ -198,6 +183,21 @@ img {
 .navigation .auth-nav {
   margin-left: auto;
   font-weight: 500;
+}
+
+.site-nav .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--timing-function);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
 .auth-nav {
@@ -251,26 +251,21 @@ img {
   letter-spacing: 0.06em;
 }
 
-.button {
-  border-color: transparent;
-  cursor: pointer;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
-}
-
-.hero-title__button {
+.order {
   display: inline-block;
   height: 50px;
   min-width: 200px;
   padding: 10px 32px;
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
   color: #ffffff;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 /*Sections*/
@@ -901,23 +896,28 @@ input[type="checkbox"] {
   margin-bottom: 50px;
 }
 
-.filter__button {
+.filter .item {
   min-width: 103px;
   background: #f5f4fa;
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
   padding: 6px 22px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 
-.filter__button:not(:last-child) {
+.filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.filter .item:hover,
+.filter .item:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
