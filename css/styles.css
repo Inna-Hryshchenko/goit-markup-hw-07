@@ -515,6 +515,28 @@ img {
   align-items: center;
 }
 
+.contacts-block--footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-block__link--footer {
+  display: block;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-block__item {
+  display: flex;
+  align-items: center;
+}
+
 .auth-nav .adress {
   text-decoration: none;
   color: #ffffff;
